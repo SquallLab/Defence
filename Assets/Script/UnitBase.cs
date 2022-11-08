@@ -2,10 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum ClassType
+{
+    CT_SwordMan,
+    CT_Archer,
+    CT_Guarder,
+    CT_Wizard,
+
+}
 public class UnitBase : MonoBehaviour
 {
     [SerializeField]
     private float moveSpeed;
+    [SerializeField]
+    private ClassType classType;
 
     private Vector3 move;
     private void Update()
