@@ -49,6 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: -1
   classType: 1
+  poolName: RA
+  maxHP: 0
+  attackRate: 4
+  attackRange: 2.5
 --- !u!212 &106614237857855423
 SpriteRenderer:
   m_ObjectHideFlags: 0

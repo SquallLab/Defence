@@ -49,6 +49,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   classType: 1
+  poolName: BA
+  maxHP: 0
+  attackRate: 4
+  attackRange: 2.5
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &106614237857855423
 SpriteRenderer:
   m_ObjectHideFlags: 0

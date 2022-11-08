@@ -23,18 +23,15 @@ public class UnitManager : MonoBehaviour
         {
             inst = this;
             poolManager = GetComponent<PoolManager>();
-
-            SpawnUnit();
         }
     }
 
-    public void SpawnUnit()
+    public void SpawnUnit(int unitIndex)
     {
-        UnitBase newUnit = poolManager.GetFromPool<UnitBase>();
+        UnitBase newUnit = poolManager.GetFromPool<UnitBase>(unitIndex);
     }
-    void ReturnPool(UnitBase unit)
+    public void ReturnPool(UnitBase unit)
     {
-        poolManager.TakeToPool<UnitBase>(unit);
-
+        poolManager.TakeToPool<UnitBase>(unit.PoolName,  unit);
     }
 }
